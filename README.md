@@ -20,3 +20,9 @@ Edit the options at the top of the notebook. df_meta = location of the run info 
 There are a number of notebooks available to creating figures:
 create_scatter_figure.ipynb
 analysis_for_final_meeting.ipynb
+
+
+## Preliminary Results
+
+The following radar chart shows the Salmonella typhi Enrichment Index for 153 differnet Phages. Astonishingly, only 2 phages had a high index in S. typhi with the follwoing accessions NC_015271.1 and NC_010807.1.
+<img src="./STEIP.png" width="500">
