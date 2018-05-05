@@ -25,4 +25,4 @@ analysis_for_final_meeting.ipynb
 ## Preliminary Results
 
 The following radar chart shows the Salmonella typhi Enrichment Index for 153 differnet Phages. Astonishingly, only 2 phages had a high index in S. typhi with the follwoing accessions NC_015271.1 and NC_010807.1.
-<img src="./STEIP.png" width="500">
+<img src="./STEIP.png">
