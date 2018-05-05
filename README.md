@@ -26,7 +26,7 @@ There are a number of notebooks available to creating figures:
 
 ## Preliminary Results
 
-### *Salmonella* typhi Enrichment Index
+### *Salmonella typhi* Enrichment Index
 The following radar chart shows the *Salmonella* typhi Enrichment Index for 153 differnet Phages. Astonishingly, only 2 phages had a high index in S. typhi, Vi06 and phiSG-JL2.
 
 <img src="./STEIP.png">
