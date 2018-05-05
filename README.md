@@ -29,7 +29,7 @@ The following radar chart shows the Salmonella typhi Enrichment Index for 153 di
 
 <img src="./STEIP.png">
 
-### What is unique about phages-infecting S. typhi
+### What is unique about phages infecting S. typhi
 To study why these 2 phages are highly successful in infecting S. typhi, not paratyphi, we performed further analysis using DELTA-BLAST. We found that Vi06 and phiSG-JL2 only among all phages share 3 homolgous proteins. The first is a protein that is homologus to the dGTPase inhibitor in E. coli. dGTPase is an important eznyme that plays a role in regulating the intracellular pool of dGTP and DNA repair mechanism. The second protein has a homology to a phage lambda Rz1-like protein. Rz1 is a component of the spanin complex that disrupts the host outer membrane and participates in cell lysis during virus exit. The third one was a hypothetical protein with yet unknown function.
 
 
