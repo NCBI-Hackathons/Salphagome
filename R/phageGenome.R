@@ -1,5 +1,6 @@
 ### This script takes a vector containing protein ids and returns a data frame containing
 ### the protein ids and the phage genome accession encoding that protein.
+
 # The function uses the NCBI Entrez Utilities API. 
 
 
