@@ -21,10 +21,9 @@ get_CDDacc <- function(prot_acc) {
     if(! is.null(cdd)) {
       region = entrez_summary(db="cdd", id= cdd)
       acc[i] = region$accession
-    } else {acc[i] = 0}
-      
-  
     
+    } else {acc = 0}
+      
   acc  
 
 }
