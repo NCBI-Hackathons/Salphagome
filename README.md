@@ -11,7 +11,7 @@ This program outputs a CSV file for downstream analysis.
 Alternatively you can skip normalisation at this step and normalise by the base count in the meta data run table information you downloaded earlier.
 Example shown below:  
 
-    python run_pipeline.py --bam_folder ../results/geuvadis_results --source geu --roi_start 25 --roi_end 45 --email halsteadjs@nih.gov --max_errors 3 --file_comment geu
+    python run_pipeline.py --bam_folder ../results/geuvadis_results --source geu --roi_start 25 --roi_end 45  --max_errors 3 --file_comment geu
 
 ## Merge with MetaData
 Open the analysis/notebooks/merge_with_meta.ipynb notebook
