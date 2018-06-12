@@ -9,9 +9,7 @@ This is done by running the following script for each sample(Typhi/PTyphi) resul
 
 Example shown below:
 
-<i>
-bash analyse.sh $RESULTS_DIR
-</i>
+<i>bash analyse.sh $RESULTS_DIR</i>
 
 
 Where $RESULTS_DIR is the directory containing the results from the alignments i.e the SAM files created by magicblast
