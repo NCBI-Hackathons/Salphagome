@@ -14,7 +14,9 @@ bash analyse.sh $RESULTS_DIR
 Where $RESULTS_DIR is the directory containing the results from the alignments i.e the SAM files created by magicblast
 
 ## Normalisation
-At this step, we normalise the data for each sample by using the combined output of the phage count and percentage coverage across the phage, based on the filtering procedure that we will outline under the Phage abundance section of this paper to come up with a normalised count.
+So the approach that we used for an initial normalisation of the counts of each phage in a Tpyphi/PTyphi sample is to retrieve the SRA accession Id of the particular sample, and then query the Entrez database for the number of reads in that sequencing run. We then used this number as the denominator for the counts/hits per phage. This is new column is then the pre-normalized version of the hits that we have generated previously.
+
+At this step, we normalise the data for each sample by using the combined output of the phage count and percentage coverage across the phage, based on the filtering procedure that we used to calculate the Phage abundance section of this pipeline, to come up with a normalised count.
 
 ## Create Figures
 We then use the following notebook, which is available for creating figures:  
