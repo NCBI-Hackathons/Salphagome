@@ -6,7 +6,7 @@ bash process_sams.sh $RESULTS_DIR
 
 Where $RESULTS_DIR is the directory containing the results from the alignments i.e the SAM files created by magicblast
 Count Hits
-First we count the hits using the run_pipeline.py script. This script will also query the Entrez API to get the spot count of each run in order to normalise the data. This process can take a while.
+First we count the hits using the analyse.sh script. This script will also query the Entrez API to get the spot count of each run in order to normalise the data. This process can take a while.
 This program outputs a CSV file for downstream analysis.
 Alternatively you can skip normalisation at this step and normalise by the base count in the meta data run table information you downloaded earlier.
 Example shown below:  
