@@ -1,28 +1,23 @@
 # Novel discovery of phages from *Salmonella* sequences: The case of typhoidal salmonellosis
 
 ## Process SAM files
-Pysam requires the SAMs to be converted into BAMs for some steps. So run the following:
-bash process_sams.sh $RESULTS_DIR
+We first process each of the SAM files generated from the alignment by counting the alignments for each phage in each of the Typhi and PTyphi samples. We counted the hits using the analyse.sh script. This script will simply take each SAM file and list all of the phages in the SAM file and returns how many hits/counts of each phage in that SAM file. This process can take a while.
+
+This program then outputs a dataframe, which is a CSV file to be used for downstream analysis and then generate plots for the data.
+
+This is done by running the following script for each sample(Typhi/PTyphi) result folder:
+Example shown below:
+bash analyse.sh $RESULTS_DIR
 
 Where $RESULTS_DIR is the directory containing the results from the alignments i.e the SAM files created by magicblast
-Count Hits
-First we count the hits using the analyse.sh script. This script will also query the Entrez API to get the spot count of each run in order to normalise the data. This process can take a while.
-This program outputs a CSV file for downstream analysis.
-Alternatively you can skip normalisation at this step and normalise by the base count in the meta data run table information you downloaded earlier.
-Example shown below:  
 
-    python run_pipeline.py --bam_folder ../results/geuvadis_results --source geu --roi_start 25 --roi_end 45  --max_errors 3 --file_comment geu
-
-## Merge with MetaData
-Open the analysis/notebooks/merge_with_meta.ipynb notebook
-Edit the options at the top of the notebook. df_meta = location of the run info table tsv df_data = location of the csv outputted by run_pipeline.py output_name = name of output csv normalise_with_mbases = True if you want to normalise with the mbases attribute
+## Normalisation
+At this step, we normalise the data for each sample by using the combined output of the phage count and percentage coverage across the phage, based on the filtering procedure that we will outline under the Phage abundance section of this paper to come up with a normalised count.
 
 ## Create Figures
-There are a number of notebooks available to creating figures:  
+We then use the following notebook, which is available for creating figures:  
 
-`create_scatter_figure.ipynb`  
-`analysis_for_final_meeting.ipynb` 
-
+`analysis.ipynb`
 
 ## Preliminary Results
 
