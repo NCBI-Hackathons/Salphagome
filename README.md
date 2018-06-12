@@ -6,7 +6,9 @@ We first process each of the SAM files generated from the alignment by counting 
 This program then outputs a dataframe, which is a CSV file to be used for downstream analysis and then generate plots for the data.
 
 This is done by running the following script for each sample(Typhi/PTyphi) result folder:
+
 Example shown below:
+
 bash analyse.sh $RESULTS_DIR
 
 Where $RESULTS_DIR is the directory containing the results from the alignments i.e the SAM files created by magicblast
