@@ -2,7 +2,6 @@
 ## CONVERT SAM TO BAM FILES
 #for i in *.sam; do samtools view -Sb $i > $i.bam; done
 #for i in *.sam.bam; do samtools sort $i -o $i.sorted.bam; done
-## INDEX THE BAM FILES
 #for i in `ls *.bam`; do samtools index $i $i.bai; done
 ## GENERATE BEDGRAPHS FROM BAM FILES
 #for i in *.bam; do bamCoverage --binSize 100 -b $i --outFileFormat bedgraph -o $i.bedgraph; done
