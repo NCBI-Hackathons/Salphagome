@@ -4,6 +4,8 @@
 
 ## How do I use it?
 
+```salphagome.ipynb```
+
 # Process Details:
 
 ## Process SAM files
@@ -27,7 +29,7 @@ At this step, we normalise the data for each sample by using the combined output
 ## Create Figures
 We then use the following notebook, which is available for creating figures:  
 
-`analysis.ipynb`
+`salphagome.ipynb`
 
 ## Preliminary Results
 
